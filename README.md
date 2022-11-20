@@ -2,6 +2,8 @@
 
 PopClip-Cubox 插件
 
+依赖 cubox-cli 命令行工具，请跳转到 [cubox-cli](https://github.com/jiyee/cubox-cli)
+
 ## 使用方法  
 
 1. 购买安装 PopClip
