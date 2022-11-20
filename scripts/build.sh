@@ -1,12 +1,9 @@
 #!/bin/bash
 
-for arch in arm64 x86_64
+for arch in "arm64" "amd64"
 do
-  GOOS=darwin GOARCH="$arch" go build -o "./flomo.popclipext/flomo-macos-$arch" ./src/flomo
+  CGO_ENABLED=0 GOOS=darwin GOARCH="${arch}" go build -ldflags "-s -w" -o "./PopClip-Cubox.popclipext/cubox-macos-${arch}" ./src/cubox
 done
 
-for name in flomo
-do
-  zip -r "${name}.zip" "./${name}.popclipext"
-  mv -f "${name}.zip" "./Downloads/${name}.popclipextz"
-done
+zip -r "PopClip-Cubox.zip" "./PopClip-Cubox.popclipext"
+mv -f "PopClip-Cubox.zip" "./Downloads/PopClip-Cubox.popclipextz"

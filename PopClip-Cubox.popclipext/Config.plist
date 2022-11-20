@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Options Title</key>
+	<dict>
+		<key>zh</key>
+		<string>Cubox 选项</string>
+		<key>en</key>
+		<string>Options for Cubox</string>
+	</dict>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Option Description</key>
+			<string>API 扩展链接</string>
+			<key>Option Label</key>
+			<string>API</string>
+			<key>Option Identifier</key>
+			<string>api</string>
+			<key>Option Type</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>Option Identifier</key>
+			<string>tag</string>
+			<key>Option Type</key>
+			<string>string</string>
+			<key>Option Description</key>
+			<string>给这个收藏添加一个或多个标签</string>
+			<key>Option Label</key>
+			<string>标签</string>
+		</dict>
+		<dict>
+			<key>Option Description</key>
+			<string>指定要存放到收藏夹位置</string>
+			<key>Option Label</key>
+			<string>收藏夹</string>
+			<key>Option Identifier</key>
+			<string>folder</string>
+			<key>Option Type</key>
+			<string>string</string>
+		</dict>
+	</array>
+	<key>Actions</key>
+	<array>
+		<dict>
+			<key>Long Running</key>
+			<true/>
+			<key>After</key>
+			<string>show-status</string>
+			<key>Image File</key>
+			<string>cubox.png</string>
+			<key>Shell Script File</key>
+			<string>cubox.sh</string>
+			<key>Script Interpreter</key>
+			<string>/bin/sh</string>
+			<key>Title</key>
+			<string>Cubox</string>
+		</dict>
+	</array>
+	<key>Extension Identifier</key>
+	<string>io.jiyee.popclip-extension-cubox</string>
+	<key>Extension Description</key>
+	<dict>
+		<key>zh</key>
+		<string>将选中文字和链接加入 Cubox</string>
+		<key>en</key>
+		<string>Add the selected text and link to your cubox.</string>
+	</dict>
+	<key>Extension Name</key>
+	<string>Cubox</string>
+	<key>Required Software Version</key>
+	<real>1624</real>
+</dict>
+</plist>
